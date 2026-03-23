@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Desportivo de Cerva</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Logo GD Cerva">
+      <span>GD Cerva</span>
+    </a>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="equipe.html">Equipa</a></li>
+      <li><a href="calendrier.html">Jogos</a></li>
+      <li><a href="galerie.html">Galeria</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Grupo Desportivo<br>de Cerva</h1>
+    <p>Paixão pelo futebol, orgulho da nossa aldeia</p>
+    <a href="calendrier.html" class="btn">Ver próximos jogos →</a>
+  </section>
+
+  <main class="section">
+
+    <h2 class="section-title">Últimas notícias</h2>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-date">15 Mar 2025</div>
+        <h3>Vitória por 3-1 frente ao SC Ribeira</h3>
+        <p>Uma exibição sólida da equipa na jornada 18 da liga distrital. Grande atuação coletiva.</p>
+      </div>
+      <div class="card">
+        <div class="card-date">10 Mar 2025</div>
+        <h3>Novos equipamentos para a época</h3>
+        <p>O clube apresenta os novos equipamentos para os jogos em casa e fora. Disponíveis em breve.</p>
+      </div>
+      <div class="card">
+        <div class="card-date">2 Mar 2025</div>
+        <h3>Treinos abertos a jovens talentos</h3>
+        <p>O GD Cerva abre inscrições para jovens entre os 10 e os 16 anos. Venha jogar connosco!</p>
+      </div>
+    </div>
+
+    <h2 class="section-title" style="margin-top: 64px;">Próximos jogos</h2>
+
+    <div class="match-item">
+      <div>
+        <div class="match-teams">GD Cerva vs FC Mondim</div>
+        <div class="match-info">Sábado, 29 Mar · 15h00 · Campo Municipal de Cerva</div>
+      </div>
+      <span class="match-score upcoming">Em breve</span>
+    </div>
+    <div class="match-item">
+      <div>
+        <div class="match-teams">SC Ribeira vs GD Cerva</div>
+        <div class="match-info">Domingo, 6 Abr · 16h00 · Fora</div>
+      </div>
+      <span class="match-score upcoming">Em breve</span>
+    </div>
+    <div class="match-item">
+      <div>
+        <div class="match-teams">GD Cerva vs UD Canelas</div>
+        <div class="match-info">Sábado, 13 Abr · 15h30 · Campo Municipal de Cerva</div>
+      </div>
+      <span class="match-score upcoming">Em breve</span>
+    </div>
+
+    <div style="margin-top: 24px;">
+      <a href="calendrier.html" class="btn-outline">Ver todos os jogos →</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Grupo Desportivo de Cerva · Cerva, Portugal</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

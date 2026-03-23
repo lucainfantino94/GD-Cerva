@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria — GD Cerva</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Logo GD Cerva">
+      <span>GD Cerva</span>
+    </a>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="equipe.html">Equipa</a></li>
+      <li><a href="calendrier.html">Jogos</a></li>
+      <li><a href="galerie.html" class="active">Galeria</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" style="padding: 60px 40px;">
+    <h1>Galeria de fotos</h1>
+    <p>Os melhores momentos do Grupo Desportivo de Cerva</p>
+  </section>
+
+  <main class="section">
+
+    <h2 class="section-title">Época 2024/2025</h2>
+
+    <div class="gallery-grid">
+      <!-- Coloca aqui os teus ficheiros de imagem na pasta images/ -->
+      <!-- Exemplo: <img src="images/jogo1.jpg" alt="Jogo vs SC Ribeira" onclick="openLightbox(this)"> -->
+
+      <!-- Placeholders enquanto não tens fotos reais -->
+      <div style="background:#1e1e1e;border:1px solid #333;border-radius:8px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:#444;font-size:13px;">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="#444"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+        Adiciona fotos aqui
+      </div>
+      <div style="background:#1e1e1e;border:1px solid #333;border-radius:8px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:#444;font-size:13px;">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="#444"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+        Adiciona fotos aqui
+      </div>
+      <div style="background:#1e1e1e;border:1px solid #333;border-radius:8px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:#444;font-size:13px;">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="#444"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+        Adiciona fotos aqui
+      </div>
+    </div>
+
+    <p style="margin-top: 32px; color: #555; font-size: 14px; text-align: center;">
+      Para adicionar fotos: coloca os ficheiros de imagem na pasta <code style="color: #D4A017;">images/</code> e substitui os placeholders acima com tags <code style="color: #D4A017;">&lt;img&gt;</code>.
+    </p>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <footer>
+    <p>© 2025 Grupo Desportivo de Cerva · Cerva, Portugal</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
