@@ -1,4 +1,4 @@
-/* ===== VARIABLES ===== */
+﻿/* ===== VARIABLES ===== */
 :root {
   --gold: #D4A017;
   --gold-dark: #b8880f;
@@ -93,10 +93,27 @@ nav {
 
 /* ===== HERO ===== */
 .hero {
-  background: var(--dark);
+  position: relative;
   padding: 100px 40px;
   text-align: center;
   border-bottom: 1px solid #333;
+  overflow: hidden;
+  background: var(--dark);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  opacity: 0.22;
+  z-index: 0;
+}
+
+.hero > *:not(.hero-bg) {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -520,3 +537,5 @@ footer a {
 
   .match-item { flex-direction: column; align-items: flex-start; }
 }
+
+
